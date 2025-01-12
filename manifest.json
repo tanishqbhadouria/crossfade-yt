@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Music Crossfade",
+    "version": "1.0",
+    "description": "Adds crossfading functionality to YouTube Music",
+    "permissions": ["activeTab"],
+    "host_permissions": ["*://music.youtube.com/*"],
+    "content_scripts": [{
+      "matches": ["*://music.youtube.com/*"],
+      "js": ["content.js"]
+    }]
+  }
